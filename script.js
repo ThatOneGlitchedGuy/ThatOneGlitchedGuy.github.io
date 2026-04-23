@@ -7,7 +7,8 @@ const observerOptions = {
 const revealOnScroll = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('revealed');
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
       revealOnScroll.unobserve(entry.target);
     }
   });
@@ -16,20 +17,20 @@ const revealOnScroll = new IntersectionObserver((entries) => {
 document.querySelectorAll('.section').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(20px)';
-  el.style.transition = 'all 0.6s ease';
+  el.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
   revealOnScroll.observe(el);
 });
 
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
-});
+// Subtle "glitch" effect on the logo occasionally
+const logo = document.querySelector('.big-fahhhh');
+setInterval(() => {
+  if (Math.random() > 0.95) {
+    logo.style.textShadow = `
+      ${Math.random() * 5}px 0 rgba(255,0,0,0.7),
+      -${Math.random() * 5}px 0 rgba(255,255,255,0.7)
+    `;
+    setTimeout(() => {
+      logo.style.textShadow = '0 0 10px rgba(255, 0, 0, 0.5)';
+    }, 100);
+  }
+}, 200);
