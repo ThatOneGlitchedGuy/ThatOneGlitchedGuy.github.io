@@ -1,177 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SYSTEM ACCESS</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogya Srivastava | ThatOneGlitchedGuy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <!-- Boot Screen -->
-  <div id="boot-screen" class="boot-screen">
-    <div class="boot-content">
-      <div class="boot-lines">
-        <div class="boot-line">BIOS v4.2.1 :: INITIALIZING</div>
-        <div class="boot-line">CPU CORES: 8 | RAM: 16GB | DRIVE: SSD</div>
-        <div class="boot-line">_</div>
-        <div class="boot-line">LOADING KERNEL...</div>
-        <div class="boot-line">_</div>
-        <div class="boot-line">FILESYSTEM CHECK... OK</div>
-        <div class="boot-line">_</div>
-        <div class="boot-line">SECURITY MODULES: ACTIVE</div>
-        <div class="boot-line">_</div>
-        <div class="boot-line">SERVICES STARTING...</div>
-        <div class="boot-line">_</div>
-        <div class="boot-line access-hint">STARTING SYSTEM IN: 3... 2... 1...</div>
-        <div class="boot-line access-hint">*SYSTEM BOOTED</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Top Navigation/Status Bar -->
-  <div class="top-bar">
-    <div class="top-left">
-      <div class="prompt">> _</div>
-      <span>SYSTEM ACCESS</span><br>
-      <span>USER: AUTHORIZED</span><br>
-      <span>MODE: EXPLORATION</span>
-    </div>
-    <div class="top-center">
-      &lt; NAVIGATE · EXAMINE · UNDERSTAND /&gt;
-    </div>
-    <div class="top-right">
-      <span>LAYERS</span>
-      <span>STACK</span>
-      <span>OUTPUT</span>
-      <span class="active">TRACE</span>
-      <span>QUIT</span>
-    </div>
-  </div>
-
-  <main class="container">
-    <!-- Header -->
-    <header class="header">
-      <div class="logo-container">
-        <h1 class="big-fahhhh">FAHHHH</h1>
-        <span class="lab-text">-LAB</span>
-      </div>
-      <p class="slogan">this isn't a site<br><span class="accent-text">this is a system you accidentally accessed</span></p>
-    </header>
-
-    <!-- Stack Section -->
-    <section class="section layer-trigger" id="stack" data-layer="1">
-      <div class="section-header">
-        <span class="section-title">$ cat SYSTEM_LAYERS.txt</span>
-      </div>
-      <div class="section-content">
-        <div class="stack-group">
-          <h3>INTERFACE LANGUAGES</h3>
-          <p>C • Bash • Python • Lua • Solidity • JavaScript • TypeScript • HTML • CSS • Node.js • Rust • Go</p>
-        </div>
-
-        <div class="stack-group">
-          <h3>EXECUTION FRAMEWORKS</h3>
-          <p>React • Next.js • FastAPI • Flask • Flutter • Swift</p>
-        </div>
-
-        <div class="stack-group">
-          <h3>SYSTEM UTILITIES</h3>
-          <p>Git • GitHub • Neovim • Vim • Cloudflare • GCP</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Setup Section -->
-    <section class="section layer-trigger" id="setup" data-layer="2">
-      <div class="section-header">
-        <span class="section-title">$ grep -r CONFIG /root</span>
-      </div>
-      <div class="section-content">
-        <div class="command-output">
-          <p class="config-line"><span class="config-key">terminal</span> ➜ Alacritty</p>
-          <p class="config-line"><span class="config-key">editor</span> ➜ Neovim (NvChad)</p>
-          <p class="config-line"><span class="config-key">prompt</span> ➜ Starship</p>
-          <p class="config-line"><span class="config-key">environment</span> ➜ minimal • fast • deliberate</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Work Section -->
-    <section class="section layer-trigger" id="work" data-layer="3">
-      <div class="section-header">
-        <span class="section-title">$ ls -la DEPLOYED/</span>
-      </div>
-      <div class="section-content">
-        <div class="work-item">
-          <h3>→ sangharsh-premier-league</h3>
-          <p><a href="https://sangharshpremierleague.com/" target="_blank" class="cmd-link">https://sangharshpremierleague.com/</a></p>
-          <p class="work-desc">React platform. Real-time systems. Data flows continuously.</p>
-        </div>
-
-        <div class="work-item">
-          <h3>→ shidh-shakti-mission</h3>
-          <p><a href="https://shidhshaktimission.com/" target="_blank" class="cmd-link">https://shidhshaktimission.com/</a></p>
-          <p class="work-desc">Next.js infrastructure. Distributed coordination. Secure channels.</p>
-        </div>
-
-        <div class="work-item">
-          <h3>→ open-source-modules</h3>
-          <div class="module-list">
-            <div class="module-item">
-              <span class="module-name">FAHH-Kernel</span> — Bare-metal | C & Assembly | <a href="https://github.com/FAHHHH-lab/FAHH-Kernel" target="_blank">read</a>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <span class="brand">ThatOneGlitchedGuy</span>
+            <div class="status">
+                <span class="pulse"></span>
+                <span class="status-label">SYSTEM UNSTABLE</span>
             </div>
-            <div class="module-item">
-              <span class="module-name">FAHHST-Assist</span> — Voice synthesis | Gemini backend | <a href="https://github.com/FAHHHH-lab/FAHHST-Assistt" target="_blank">read</a>
-            </div>
-            <div class="module-item">
-              <span class="module-name">FAHH-Node</span> — Thread ops | Token protection | <a href="https://github.com/FAHHHH-lab/FAHH-NodeNode" target="_blank">read</a>
-            </div>
-            <div class="module-item">
-              <span class="module-name">FAHH-GoAPI</span> — Enterprise backend | Go | <a href="https://github.com/FAHHHH-lab/FAHH-GoAPI" target="_blank">read</a>
-            </div>
-            <div class="module-item">
-              <span class="module-name">FAHH-DevKit</span> — Automation layer | Orchestration | <a href="https://github.com/FAHHHH-lab/FAHH-DevKit" target="_blank">read</a>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </nav>
 
-    <!-- Contact Section -->
-    <section class="section layer-trigger" id="contact" data-layer="4">
-      <div class="section-header">
-        <span class="section-title">$ find . -name "CONTACT" -type f</span>
-      </div>
-      <div class="section-content">
-        <p class="command-output">
-          <span class="prompt-text">email »</span> <a href="mailto:yogya.coder@gmail.com" class="cmd-link">yogya.coder@gmail.com</a>
-        </p>
-        <p class="command-output">
-          <span class="prompt-text">source »</span> <a href="https://github.com/FAHHHH-lab" target="_blank" class="cmd-link">github.com/FAHHHH-lab</a>
-        </p>
-      </div>
-    </section>
-  </main>
+    <main class="container">
+        <section id="hero">
+            <div class="skull-wrapper">
+                <img src="download.jpeg" alt="Skull" class="glitch-img">
+            </div>
+            <h1 class="name">Glitchy Dev</h1>
+            <h2 class="real-name">Yogya Srivastava</h2>
+            <p class="tagline">Hacker & System Tinkerer</p>
+            <div class="quick-stats">
+                <span>12 y/o</span>
+                <span class="separator">•</span>
+                <span>India</span>
+                <span class="separator">•</span>
+                <span>Self-Taught</span>
+            </div>
+        </section>
 
-  <!-- Bottom Bar / Footer -->
-  <footer class="bottom-bar">
-    <div class="bottom-item">
-      <span class="status-light"></span>
-      SYSTEM RUNNING
-    </div>
-    <div class="bottom-item">
-      <span class="status-indicator">●</span>
-      MONITORING
-    </div>
-    <div class="bottom-item">
-      <span class="status-light"></span>
-      PROCESSES ACTIVE
-    </div>
-    <a href="https://github.com/FAHHHH-lab" class="github-link" target="_blank">
-      ACCESS REPOSITORY
-    </a>
-  </footer>
+        <section id="about" class="modern-card">
+            <h2><i class="fa-solid fa-circle-info"></i> About</h2>
+            <p>I break things to understand them, then rebuild them until they run again. Specialized in low-level systems, APIs, and experiments that probably shouldn't be running.</p>
+            <blockquote class="motto">"system online // state: unstable"</blockquote>
+        </section>
 
-  <script src="script.js"></script>
+        <section id="skills" class="modern-card">
+            <h2><i class="fa-solid fa-bolt"></i> Capabilities</h2>
+            <div class="skill-grid">
+                <div class="skill-pill highlight"><strong>HACKING</strong></div>
+                <div class="skill-pill">C</div>
+                <div class="skill-pill">Rust</div>
+                <div class="skill-pill">Go</div>
+                <div class="skill-pill">Bash</div>
+                <div class="skill-pill">Node.js</div>
+                <div class="skill-pill">Python</div>
+                <div class="skill-pill">React</div>
+                <div class="skill-pill">Next.js</div>
+                <div class="skill-pill">Flutter</div>
+            </div>
+        </section>
+
+        <section id="projects" class="modern-card">
+            <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
+            <div class="projects-container">
+                <a href="https://github.com/ThatOneGlitchedGuy/Go-API" class="project-card">
+                    <h3>Go-API</h3>
+                    <p>High-performance backend experiments.</p>
+                    <span class="link-text">view source →</span>
+                </a>
+                <a href="https://github.com/ThatOneGlitchedGuy/Dev-Kit" class="project-card">
+                    <h3>Dev-Kit</h3>
+                    <p>Essential tools for the unstable state.</p>
+                    <span class="link-text">view source →</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="modern-card">
+            <h2><i class="fa-solid fa-envelope"></i> Connect</h2>
+            <div class="contact-raw">
+                <a href="mailto:yogya.coder@gmail.com" class="yellow-link"><strong>{ EMAIL }</strong></a>
+                <span class="separator">|</span>
+                <a href="https://github.com/ThatOneGlitchedGuy" class="yellow-link"><strong>{ GitHUB }</strong></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="warning-text"><i class="fa-solid fa-triangle-exclamation"></i> Use Repos AT your own RisK , it may or may not deep fry your cpu</p>
+        <p>&copy; 2026 Yogya Srivastava // Stay Unstable</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
